@@ -1,0 +1,118 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    font-family: 'Lexend Deca', sans-serif;
+    margin: 0;
+}
+
+img {
+    display: block;
+    max-width: 100%;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-size: 3rem;
+    text-transform: uppercase;
+    color: hsl(0, 0%, 95%);
+}
+
+p {
+    color: hsla(0, 0%, 100%, 0.75);
+    line-height: 1.5;
+}
+
+.main-grid-box {
+    padding: 4rem 1.5rem;
+    max-width: 55rem;
+}
+
+@media (min-width: 600px){
+    body {
+        min-height: 100vh;
+        display: grid;
+        place-items: center;
+    }
+
+    .main-grid-box {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+.learn-more {
+    background: #fff;
+    padding: .75rem 2rem;
+    border: 1px solid #fff;
+    border-radius: 100vw;
+    cursor: pointer;
+    line-height: 1;
+    width: 9rem;
+    margin-top: 4rem;
+}
+
+.learn-more:hover {
+    color: #fff;
+}
+
+.btn-1 {
+    color: hsl(31, 77%, 52%);;
+}
+
+.btn-2 {
+    color: hsl(184, 100%, 22%);;
+}
+
+.btn-3 {
+    color: hsl(179, 100%, 13%);
+}
+
+.btn-1:hover {
+    background: hsl(31, 77%, 52%);
+}
+
+.btn-2:hover {
+    background: hsl(184, 100%, 22%);
+}
+
+.btn-3:hover {
+    background: hsl(179, 100%, 13%);
+}
+
+.container {
+    padding: 2.5rem;
+}
+
+.container-1 {
+    background: hsl(31, 77%, 52%);
+}
+
+.container-2 {
+    background: hsl(184, 100%, 22%);
+}
+
+.container-3 {
+    background: hsl(179, 100%, 13%);
+}
+
+.inner-grid {
+    display: grid;
+    gap: 2rem;
+}
+
+@media (max-width: 599px){
+    .container {
+        height: 28rem;
+        padding-bottom: 0;
+    }
+
+    .learn-more {
+        margin: 0;
+    }
+}
+
+
+
+
